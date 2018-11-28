@@ -1,8 +1,10 @@
 # ChinaBistroWebsite
 
 ## Features I want:
-1. HomePage
+1. Pages
     1. Map/Link to Google Maps
+    2. menu
+    3. contact
 2. Menu
     1. Lunch
     2. Party Trays
