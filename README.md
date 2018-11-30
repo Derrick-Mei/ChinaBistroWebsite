@@ -32,3 +32,6 @@
     6. Special
         1. Lemon CK, HK CK
         2. Fish Filet, Braised Tofu, Wal Sh
+
+
+    sass --watch assets/sass:assets/css
