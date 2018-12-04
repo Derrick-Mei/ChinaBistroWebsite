@@ -1,0 +1,41 @@
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.8500112278975!2d-88.37026408411656!3d42.174889779199795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f13b1fbab1a6d%3A0x2fa1a896f52e4d48!2s3979+Algonquin+Rd%2C+Algonquin%2C+IL+60102!5e0!3m2!1sen!2sus!4v1543834025055" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.848688118656!2d-88.37024898429617!3d42.17491807919982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f13ae07a8c799%3A0xdb6076da6b409b97!2sChina+Bistro!5e0!3m2!1sen!2sus!4v1543836856282" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 42.17489, lng: -88.368075};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&callback=initMap">
+    </script>
+  </body>
+</html>

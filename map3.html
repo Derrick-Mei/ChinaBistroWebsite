@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <style>
+#map-canvas {
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.placeDiv {
+  z-index: 9999;
+  position: absolute;
+}
+
+.map-container {
+  position: relative;
+}
+
+.placecard__container {
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  max-width: 330px;
+  width: 100%;
+  background: white none repeat scroll 0% 0%/auto padding-box border-box;
+  border-radius: 2px 2px 2px 2px;
+  font: normal normal normal normal 11px / normal Roboto, Arial, sans-serif;
+  margin: 10px;
+  padding: 9px 4px 9px 11px;
+  overflow: hidden;
+}
+.placecard__left {
+  float: left;
+  width: 75%;
+}
+.placecard__right {
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+.placecard__business-name {
+  cursor: default;
+  height: 19px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
+  perspective-origin: 100px 9.5px;
+  transform-origin: 100px 9.5px;
+  font: normal normal 500 normal 14px / normal Roboto, Arial;
+  overflow: hidden;
+  margin: 0;
+}
+.placecard__info {
+  color: #5b5b5b;
+  cursor: default;
+  height: 32px;
+  width: 200px;
+  column-rule-color: #5b5b5b;
+  perspective-origin: 100px 16px;
+  transform-origin: 100px 16px;
+  border: 0px none #5b5b5b;
+  font: normal normal normal normal 12px / normal Roboto, Arial;
+  margin: 6px 0px 0px;
+  outline: #5b5b5b none 0px;
+}
+.placecard__direction-icon {
+  background: rgba(0, 0, 0, 0) url("https://maps.gstatic.com/mapfiles/embed/images/entity11.png") repeat scroll 0px 0px/70px 210px padding-box border-box;
+  height: 22px;
+  width: 22px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.placecard__direction-link {
+  color: #3a84df;
+  display: block;
+  height: 43px;
+  text-decoration: none;
+  width: 54.7344px;
+}
+.placecard__view-large {
+  display: block;
+  margin-top: 10px;
+  color: #3a84df;
+  text-decoration: none;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="map-container">
+      <div class="placeDiv">
+        <div class="placecard__container">
+          <div class="placecard__left">
+            <p class="placecard__business-name">China Bistro Name Goes Here</p>
+            <p class="placecard__info">
+              9 Avenida Ramón Luis Rivera, Bayamón, 00961, Puerto Rico
+            </p>
+            <a
+              class="placecard__view-large"
+              target="_blank"
+              href="https://maps.google.com/maps?ll=18.416035,-66.162618&amp;z=18&amp;t=m&amp;hl=en-US&amp;gl=AR&amp;mapclient=embed&amp;cid=2947398168469204860"
+              id="A_41"
+              >View larger map</a
+            >
+          </div>
+          <!-- placecard__left -->
+
+          <div class="placecard__right">
+            <a
+              class="placecard__direction-link"
+              target="_blank"
+              href="https://maps.google.com/maps?ll=18.416035,-66.162618&amp;z=18&amp;t=m&amp;hl=en-US&amp;gl=AR&amp;mapclient=embed&amp;daddr=Roberto%20Perez%20Obregon%20Law%20Office%209%20Avenida%20Ram%C3%B3n%20Luis%20Rivera%20Bayam%C3%B3n%2C%2000961%20Puerto%20Rico@18.4160349,-66.1626177"
+              id="A_9"
+            >
+              <div class="placecard__direction-icon"></div>
+              Directions
+            </a>
+          </div>
+          <!-- placecard__right -->
+        </div>
+        <!-- placecard__container -->
+      </div>
+      <!-- placeDiv -->
+    </div>
+    <!-- map-container -->
+    <div id="map-canvas"></div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&callback=initMap">
+      type="text/javascript"
+    ></script>
+  <script>
+    // if HTML DOM Element that contains the map is found...
+    if (document.getElementById("map-canvas")) {
+      // Coordinates to center the map
+      var myLatlng = new google.maps.LatLng(18.41604, -66.1626177);
+
+      // Other options for the map, pretty much selfexplanatory
+      var mapOptions = {
+        zoom: 16,
+        center: myLatlng,
+        scrollwheel: false,
+        query: "Roberto Perez Obregon Law Office",
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+
+      // Attach a map to the DOM Element, with the defined settings
+      var map = new google.maps.Map(
+        document.getElementById("map-canvas"),
+        mapOptions
+      );
+
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: "Roberto Perez Obregon Law Office"
+      });
+
+      //Resize map
+    //   google.map.event.addDomListener(window, "load", initialize);
+    //   google.map.event.addDomListener(window, "resize", function() {
+    //     var center = map.getCenter();
+    //     google.map.event.trigger(map, "resize");
+    //     map.setCenter(center);
+    //   });
+    }
+  </script>
+  </body>
+
+</html>
