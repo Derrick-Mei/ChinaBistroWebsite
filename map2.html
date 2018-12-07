@@ -16,18 +16,45 @@
     <h3>My Google Maps Demo</h3>
     <!--The div element for the map -->
     <div id="map"></div>
-    
+    <div id="content">asdf</div>
+
     <script>
 // Initialize and add the map
+var map;
+var content = document.getElementById("content");
+var contentHTML = "";
+
 function initMap() {
   // The location of Uluru
-  var uluru = {lat: 42.17489, lng: -88.368075};
+  var myLocation = {lat: 25.168062, lng: 55.403393};
   // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 16, center: uluru});
+  map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: myLocation});
   // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
+  var marker = new google.maps.Marker({position: myLocation, map: map});
+
+var service = new google.maps.places.PlacesService(map);
+service.nearbySearch({
+    location: myLocation,
+    radius: 500,
+    // name: "Le Jardin",  // this won't work, try removing name property and the place will show in the result
+    type: ['restaurant']
+}, callback);
+
+function callback(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+        for (var i = 0; i < results.length; i++) {
+            contentHTML += "Name: " + results[i].name + "<br>";
+        }
+    content.innerHTML = contentHTML;
+    console.log(results.length);
+    }else{
+        console.error(status);
+    }//end of if()
+}//end of callback()
+
 }
+
     </script>
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
@@ -35,7 +62,7 @@ function initMap() {
     * The callback parameter executes the initMap() function
     -->
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&libraries=places&callback=initMap">
     </script>
   </body>
 </html>
