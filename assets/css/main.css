@@ -2998,4 +2998,30 @@ button:disabled,
   border: 1px solid black;
 }
 
+.justifyText {
+  text-align: center;
+}
+
+.padding {
+  padding-bottom: 1.5rem;
+}
+
+.inline {
+  display: inline;
+}
+
+.red {
+  color: red;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+@media print {
+  #header, #footer, #sidebar {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

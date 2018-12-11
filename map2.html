@@ -64,5 +64,39 @@ function callback(results, status) {
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&libraries=places&callback=initMap">
     </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&"
+  >
+      type="text/javascript"
+    >
+  </script>
+  <script>
+    // if HTML DOM Element that contains the map is found...
+    if (document.getElementById("map-canvas")) {
+      // Coordinates to center the map
+      var myLatlng = new google.maps.LatLng(42.17489, -88.368075);
+
+      // Other options for the map, pretty much selfexplanatory
+      var mapOptions = {
+        zoom: 16,
+        center: myLatlng,
+        scrollwheel: false,
+        query: "China Bistro",
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+
+      // Attach a map to the DOM Element, with the defined settings
+      var map = new google.maps.Map(
+        document.getElementById("map-canvas"),
+        mapOptions
+      );
+
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: "China Bistro"
+      });
+    }
+  </script>
   </body>
 </html>

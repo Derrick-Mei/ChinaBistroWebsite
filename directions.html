@@ -43,48 +43,10 @@
 
               <div class="col-8 col-12-medium border">
                 <!-- right div -->
-                <!--
-                  <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=3979%20W%20algonquin%20rd%20algonquin%20il&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-                -->
-                <div class="map-container">
-                  <div class="placeDiv">
-                    <div class="placecard__container">
-                      <div class="placecard__left">
-                        <p class="placecard__business-name">China Bistro</p>
 
-                        <p class="placecard__info">
-                          3979 W. Algonquin Road <br/>
-                          Algonquin, IL 60102
-                        </p>
-                        <a
-                          class="placecard__view-large"
-                          target="_blank"
-                          href="https://goo.gl/maps/ctbJaxNzuRK2"
-                          id="A_41"
-                          >View larger map</a
-                        >
-                      </div>
-                      <!-- placecard__left -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.848688118656!2d-88.37024898429617!3d42.17491807919982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f13ae07a8c799%3A0xdb6076da6b409b97!2sChina+Bistro!5e0!3m2!1sen!2sus!4v1543836856282" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                      <div class="placecard__right">
-                        <a
-                          class="placecard__direction-link"
-                          target="_blank"
-                          href="https://www.google.com/maps/dir//China+Bistro,+Algonquin+Road,+Algonquin,+IL/@42.174973,-88.3769012,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x880f13ae07a8c799:0xdb6076da6b409b97!2m2!1d-88.3680603!2d42.1749181?hl=en-US"
-                          id="A_9"
-                        >
-                          <div class="placecard__direction-icon"></div>
-                          Directions
-                        </a>
-                      </div>
-                      <!-- placecard__right -->
-                    </div>
-                    <!-- placecard__container -->
-                  </div>
-                  <!-- placeDiv -->
-                </div>
-                <!-- map-container -->
-                <div id="map-canvas"></div>
+
               </div>
               <!-- right div -->
             </div>
@@ -125,20 +87,15 @@
           <!-- Section -->
           <section>
             <header class="major"><h2>Contact Us</h2></header>
-            <p>
-              Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-              velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
-              aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-              tempus aliquam.
-            </p>
+
             <ul class="contact">
               <li class="fa-envelope-o">
                 <a href="#">information@untitled.tld</a>
               </li>
-              <li class="fa-phone">(000) 000-0000</li>
+              <li class="fa-phone">(847) 854-6823</li>
               <li class="fa-home">
-                1234 Somewhere Road #8254<br />
-                Nashville, TN 00000-0000
+                3979 W. Algonquin Rd<br />
+                Algonquin, IL 60102
               </li>
             </ul>
           </section>
@@ -170,39 +127,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdRzxhIhyepwWilKxnFCJINR03G-ob6Q&"
-    >
-        type="text/javascript"
-      >
-    </script>
-    <script>
-      // if HTML DOM Element that contains the map is found...
-      if (document.getElementById("map-canvas")) {
-        // Coordinates to center the map
-        var myLatlng = new google.maps.LatLng(42.17489, -88.368075);
-
-        // Other options for the map, pretty much selfexplanatory
-        var mapOptions = {
-          zoom: 16,
-          center: myLatlng,
-          scrollwheel: false,
-          query: "China Bistro",
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        // Attach a map to the DOM Element, with the defined settings
-        var map = new google.maps.Map(
-          document.getElementById("map-canvas"),
-          mapOptions
-        );
-
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: "China Bistro"
-        });
-      }
-    </script>
+    
   </body>
 </html>
