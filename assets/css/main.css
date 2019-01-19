@@ -2995,7 +2995,15 @@ button:disabled,
 }
 
 .border {
-  border: 1px solid black;
+  border: 3px solid black;
+}
+
+.borderRed {
+  border: 3px solid red;
+}
+
+.borderBlue {
+  border: 3px solid blue;
 }
 
 .justifyText {
