@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'font-awesome.min.css';
+@import "font-awesome.min.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 /*
 	Editorial by HTML5 UP
@@ -3006,6 +3006,28 @@ button:disabled,
   border: 3px solid blue;
 }
 
+.red {
+  color: red;
+}
+
+.green {
+  border: 1px solid green;
+  margin-top: 0%;
+}
+
+.orange {
+  border: 1px solid orange;
+}
+
+.description {
+  background-color: aqua;
+  font-size: 0.75rem;
+}
+
+#rowTest {
+  flex-direction: row;
+}
+
 .justifyText {
   text-align: center;
 }
@@ -3018,16 +3040,14 @@ button:disabled,
   display: inline;
 }
 
-.red {
-  color: red;
-}
-
 .noWrap {
   white-space: nowrap;
 }
 
 @media print {
-  #header, #footer, #sidebar {
+  #header,
+#footer,
+#sidebar {
     display: none !important;
   }
 }
