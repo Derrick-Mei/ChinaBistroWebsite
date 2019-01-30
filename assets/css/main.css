@@ -3036,12 +3036,26 @@ button:disabled,
   padding-bottom: 1.5rem;
 }
 
+.paddingRight {
+  padding-right: 3rem;
+}
+
 .inline {
   display: inline;
 }
 
 .noWrap {
   white-space: nowrap;
+}
+
+.noPM {
+  padding: 0%;
+  margin: 0%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media print {

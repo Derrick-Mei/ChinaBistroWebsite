@@ -31,13 +31,13 @@
                             <h4>Appetizers</h4>
                             <div class="table-wrapper">
                                 <table>
-                                    <thead>
+                                    <!-- <thead>
                                         <tr>
                                             <th></th>
                                             <th></th>
                                             <th>Price</th>
                                         </tr>
-                                    </thead>
+                                    </thead> -->
                                     <tbody>
                                         <tr>
                                             <td>Egg Roll (1 piece)</td>
@@ -55,8 +55,8 @@
                                             <td>6.25</td>
                                         </tr>
                                         <tr>
-                                            <td>Chicken Appetizer</td>
-                                            <td>(like chicken nuggets)</td>
+                                            <td>Chicken Appetizer (like chicken nuggets)</td>
+                                            <td></td>
                                             <td>7.25</td>
                                         </tr>
                                         <tr>
@@ -85,11 +85,6 @@
                                             <!-- <td></td> -->
                                             <!-- <td></td> -->
                                         </tr>
-                                        <tr>
-                                            <td>Hunan <i class="fab fa-hotjar red"></i></td>
-                                            <td></td>
-                                            <td>7.25</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -110,31 +105,43 @@
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>Entree</th>
-                                                    <th>Price</th>
+                                                    <th>Name</th>
+                                                    <th>Small</th>
+                                                    <th>Large</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Fried Rice</td>
-                                                    <td>7.25</td>
+                                                    <td>Egg Drop Soup</td>
+                                                    <td>2.75</td>
+                                                    <td>3.95</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Egg Foo Young</td>
-                                                    <td>7.25</td>
+                                                    <td>Hot & Sour Soup</td>
+                                                    <td>2.75</td>
+                                                    <td>3.95</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Vegetable Delight</td>
-                                                    <td>6.95</td>
+                                                    <td>Vegetable Soup</td>
+                                                    <td>2.75</td>
+                                                    <td>3.95</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Phoenix and Dragon (Chicken and Shrimp)</td>
-                                                    <td>7.75</td>
+                                                    <td>Won Ton Soup</td>
+                                                    <td>2.95</td>
+                                                    <td>4.25</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Beef Tomato & Green Pepper</td>
-                                                    <td>7.95</td>
+                                                    <td>Sizzling Rice Soup</td>
+                                                    <td>-----</td>
+                                                    <td>7.50</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Seafood Soup</td>
+                                                    <td>-----</td>
+                                                    <td>7.50</td>
+                                                </tr>
+
 
                                             </tbody>
                                         </table>
@@ -148,7 +155,7 @@
                     <div class="justifyText padding orange">
                         <h1>Mix and Match</h1>
                             <h2 class="inline">Protein Choices:</h2>
-                            <h3 class="inline noWrap">Chicken, Pork, Beef (+.25), Shrimp (+.50)</h3>
+                            <h3 class="inline">Chicken, Pork, Beef (+.55/$1), Shrimp (+1/$1.25), Combination (+2 Reg only)</h3>
                             <br/>
                             <h5><i class="fab fa-hotjar red"></i> indicates Hot and Spicy</h5>
                           </div>
@@ -156,19 +163,44 @@
                         <div class="borderRed col-6 col-12-medium">
                             <!-- Table -->
                             <h4>Lots of Veggies</h4>
+                            <!-- <div class="flex"><p>Entree</p> <p><p>half</p><p>reg</p></p></div> -->
                             <dl class="orange">
-                                <dt class="green">Oriental <div>hi</div></dt>
-                                <dd class="borderBlue">
-                                    <p><div>testasdf</div>  A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+
+                                <dt class="noPM flex"><div>Oriental</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
                                 </dd>
-                                <dt>Item2</dt>
-                                <dd>
-                                    <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
+
+                                <dt class="noPM flex"><div>Chop Suey</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
                                 </dd>
-                                <dt>Item3</dt>
-                                <dd>
-                                    <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
+
+                                <dt class="noPM flex"><div>Broccoli and Water Chestnuts</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
                                 </dd>
+
+                                <dt class="noPM flex"><div>Peapods and Water Chestnuts</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
+                                <dt class="noPM flex"><div>Almond and Cashew</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
+                                <dt class="noPM flex"><div>Moo Shu</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
+                                <dt class="noPM flex"><div>Garlic</div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
                             </dl>
                         </div>
                         <!-- ========== ********=============== -->
@@ -181,41 +213,43 @@
                                 <div class="borderBlue col-12">
 
                                     <!-- Table -->
+                            <h4>Spicy <i class="fab fa-hotjar red"></i></h4>
+                            <!-- <div class="flex"><p>Entree</p> <p><p>half</p><p>reg</p></p></div> -->
+                            <dl class="orange">
 
-                                    <h4>Other2</h4>
-                                    <div class="table-wrapper">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>Entree</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Fried Rice</td>
-                                                    <td>7.25</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Egg Foo Young</td>
-                                                    <td>7.25</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Vegetable Delight</td>
-                                                    <td>6.95</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Phoenix and Dragon (Chicken and Shrimp)</td>
-                                                    <td>7.75</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Beef Tomato & Green Pepper</td>
-                                                    <td>7.95</td>
-                                                </tr>
+                                <dt class="noPM flex"><div>Curry <i class="fab fa-hotjar red"></i></div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
 
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                <dt class="noPM flex"><div>Hunan <i class="fab fa-hotjar red"></i></div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
+                                <dt class="noPM flex"><div>Szechwan <i class="fab fa-hotjar red"></i></div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
+                                <dt class="noPM flex"><div>Kung Pao <i class="fab fa-hotjar red"></i></div><div><span class="paddingRight">Half $6.95</span><span>Reg $10.25</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+                            </dl>
+
+                            <h4>Sweet and Saucy</h4>
+                            <dl>
+                                <dt class="noPM flex"><div>Teriyaki</div><div><span class="paddingRight">--N/A--</span><span>Reg $10.95</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+
+                                <dt class="noPM flex"><div>Mongolian</div><div><span class="paddingRight">Half $7.45</span><span>Reg $10.95</span></div></dt>
+                                <dd class="">
+                                    <p>A stir fry of broccoli, peapods, green pepper, mushroom, bamboo shoots and water chestnuts in a garlic sauce</p>
+                                </dd>
+                            </dl>
 
                                 </div>
 
