@@ -86,10 +86,11 @@
   border: 3px solid black;
 }
 .borderRed {
-  border: 3px solid red;
+  border: 3px dotted red;
+  
 }
 .borderBlue {
-  border: 3px solid blue;
+  border: 3px dotted blue;
 }
 .red {
   color: red;
@@ -104,11 +105,18 @@
   border: 1px solid orange;
 }
 
+.borderWhite {
+  border: 1px solid white;
+}
+
 .description {
-  // column-width: 90%;
-  background-color: aqua;
+  background-color: white;
   font-size: 0.75rem;
-  // border-color: none;
+  padding-top: 0;
+}
+
+.pb0 {
+  padding-bottom: 0%;
 }
 
 #rowTest {
@@ -116,7 +124,6 @@
 }
 
 .justifyText {
-  // border: 1px solid red;
   text-align: center;
 }
 
