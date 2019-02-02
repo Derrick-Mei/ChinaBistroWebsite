@@ -2994,18 +2994,6 @@ button:disabled,
   text-decoration: none;
 }
 
-.border {
-  border: 3px solid black;
-}
-
-.borderRed {
-  border: 3px dotted red;
-}
-
-.borderBlue {
-  border: 3px dotted blue;
-}
-
 .red {
   color: red;
 }
