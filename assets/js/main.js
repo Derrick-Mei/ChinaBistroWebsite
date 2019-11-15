@@ -88,8 +88,8 @@
 				$('<style>#sidebar .inner::-webkit-scrollbar { display: none; }</style>')
 					.appendTo($head);
 
-		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
+		// Toggle.  This is where the toggle word appears
+			$('<a href="#sidebar" class="toggle"></a>')
 				.appendTo($sidebar)
 				.on('click', function(event) {
 
