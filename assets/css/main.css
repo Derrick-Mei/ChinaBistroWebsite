@@ -3007,7 +3007,7 @@ button:disabled,
 }
 
 .orange {
-  border: 1px solid orange;
+  background-color: 1px solid orange;
 }
 
 .yellow {
@@ -3035,6 +3035,10 @@ button:disabled,
 }
 .flex {
   display: flex;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .sb {
@@ -3077,7 +3081,7 @@ button:disabled,
 }
 
 .w20 {
-  width: 16%;
+  width: 15.5%;
 }
 
 .w30 {
