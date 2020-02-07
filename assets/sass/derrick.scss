@@ -51,6 +51,10 @@
   justify-content: space-between;
 }
 
+.sa {
+  justify-content: space-around;
+}
+
 .accordion {
   background-color: rgba(230, 235, 237, 0.25);
   // color: #444;
@@ -99,4 +103,10 @@
 
 .w30 {
   width: 30%;
+}
+
+.noodle {
+  // font-size: 1.1em;
+  padding: 0 !important;
+  margin: 0 !important;
 }

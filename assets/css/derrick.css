@@ -50,6 +50,10 @@
   justify-content: space-between;
 }
 
+.sa {
+  justify-content: space-around;
+}
+
 .accordion {
   background-color: rgba(230, 235, 237, 0.25);
   cursor: pointer;
@@ -91,6 +95,11 @@
 
 .w30 {
   width: 30%;
+}
+
+.noodle {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /*# sourceMappingURL=derrick.css.map */
