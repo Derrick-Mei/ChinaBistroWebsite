@@ -3045,18 +3045,18 @@ button:disabled,
   justify-content: space-between;
 }
 
-.sa {
-  justify-content: space-around;
-}
-
 .accordion {
   background-color: rgba(230, 235, 237, 0.25);
   cursor: pointer;
   padding: 0.69em;
-  width: 100%;
   border-top: solid 2px rgba(210, 215, 217, 0.75);
-  outline: none;
   transition: 0.4s;
+}
+
+.nonaccordion {
+  background-color: rgba(230, 235, 237, 0.25);
+  padding: 0.69em;
+  border-top: solid 2px rgba(210, 215, 217, 0.75);
 }
 
 .lightGrey {
@@ -3092,9 +3092,22 @@ button:disabled,
   width: 30%;
 }
 
-.noodle {
-  padding: 0 !important;
-  margin: 0 !important;
+.noodles {
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.margin-left {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 980px) {
+  .medium-gone {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

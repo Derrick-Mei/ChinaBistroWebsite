@@ -1,105 +1,20 @@
-@charset "UTF-8";
-.black {
-  border: 3px solid black;
-}
+/* Error: Undefined mixin.
+ *     ,
+ * 121 | / @include breakpoint('<=medium') {
+ * 122 | |   .medium-gone {
+ * 123 | |     display: none;
+ * 124 | |   }
+ * 125 | \ }
+ *     '
+ *   assets/sass/derrick.scss 121:1  root stylesheet */
 
-.white {
-  border: 1px solid white;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 121 \2502  \250c  @include breakpoint('<=medium') {\a 122 \2502  \2502    .medium-gone {\a 123 \2502  \2502      display: none;\a 124 \2502  \2502    }\a 125 \2502  \2514  }\a     \2575 \a   assets/sass/derrick.scss 121:1  root stylesheet";
 }
-
-.red {
-  color: red;
-}
-
-.orange {
-  background-color: 1px solid orange;
-}
-
-.yellow {
-  border: 1px solid yellow;
-}
-
-.green {
-  border: 5px solid green;
-}
-
-.blue {
-  border: 3px dotted blue;
-}
-
-.purple {
-  border: 1px solid purple;
-}
-
-@media print {
-  #header,
-#footer,
-#sidebar {
-    display: none !important;
-  }
-}
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.sb {
-  justify-content: space-between;
-}
-
-.sa {
-  justify-content: space-around;
-}
-
-.accordion {
-  background-color: rgba(230, 235, 237, 0.25);
-  cursor: pointer;
-  padding: 0.69em;
-  width: 100%;
-  border-top: solid 2px rgba(210, 215, 217, 0.75);
-  outline: none;
-  transition: 0.4s;
-}
-
-.lightGrey {
-  background-color: white;
-}
-
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
-.sign:after {
-  content: "+";
-  font-weight: bold;
-}
-
-.active span:after {
-  content: "−";
-}
-
-.panel {
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.w20 {
-  width: 15.5%;
-}
-
-.w30 {
-  width: 30%;
-}
-
-.noodle {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/*# sourceMappingURL=derrick.css.map */
