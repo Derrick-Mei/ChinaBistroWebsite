@@ -51,9 +51,13 @@
   justify-content: space-between;
 }
 
-// .sa {
-//   justify-content: space-around;
-// }
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-around {
+  justify-content: space-between;
+}
 
 .accordion {
   background-color: rgba(230, 235, 237, 0.25);
@@ -106,6 +110,10 @@
   width: 30%;
 }
 
+.w50 {
+  width: 50%;;
+}
+
 .noodles {
   margin: 0 auto;
 }
@@ -115,11 +123,20 @@
 }
 
 .margin-left {
-  margin-left: 3%;
+  margin-left: 4%;
 }
 
-@include breakpoint('<=medium') {
+@include breakpoint("<=medium") {
   .medium-gone {
     display: none;
   }
+}
+
+.types {
+  height: 200px;
+}
+
+#sidebar .inner #menu ul li a strong.side-red {
+  color: #f56a6a !important;
+  background-color: red;
 }
