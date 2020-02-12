@@ -3045,6 +3045,18 @@ button:disabled,
   justify-content: space-between;
 }
 
+.sa {
+  justify-content: space-around;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-around {
+  justify-content: space-between;
+}
+
 .accordion {
   background-color: rgba(230, 235, 237, 0.25);
   cursor: pointer;
@@ -3092,6 +3104,10 @@ button:disabled,
   width: 30%;
 }
 
+.w50 {
+  width: 50%;
+}
+
 .noodles {
   margin: 0 auto;
 }
@@ -3101,12 +3117,31 @@ button:disabled,
 }
 
 .margin-left {
-  margin-left: 3%;
+  margin-left: 4%;
+}
+
+.types {
+  padding: 1.5em 0;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.type-icon {
+  font-size: 2em;
+  color: #f56a6a;
+}
+
+.side-red {
+  color: #f56a6a;
 }
 
 @media screen and (max-width: 980px) {
   .medium-gone {
     display: none;
+  }
+
+  .types {
+    padding: 1em 0;
   }
 }
 

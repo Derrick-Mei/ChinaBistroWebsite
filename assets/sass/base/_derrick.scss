@@ -51,6 +51,10 @@
   justify-content: space-between;
 }
 
+.sa {
+  justify-content: space-around;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -111,7 +115,7 @@
 }
 
 .w50 {
-  width: 50%;;
+  width: 50%;
 }
 
 .noodles {
@@ -126,17 +130,27 @@
   margin-left: 4%;
 }
 
+
+.types {
+  padding: 1.5em 0;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.type-icon {
+  font-size: 2em;
+  color: #f56a6a;
+}
+.side-red {
+  color: #f56a6a;
+}
+
 @include breakpoint("<=medium") {
   .medium-gone {
     display: none;
   }
-}
 
-.types {
-  height: 200px;
-}
-
-#sidebar .inner #menu ul li a strong.side-red {
-  color: #f56a6a !important;
-  background-color: red;
+  .types {
+    padding: 1em 0;
+  }
 }
