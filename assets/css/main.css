@@ -3144,5 +3144,10 @@ button:disabled,
     padding: 1em 0;
   }
 }
+.map-link {
+  color: blue;
+  font-size: 2rem;
+  border: none;
+}
 
 /*# sourceMappingURL=main.css.map */
